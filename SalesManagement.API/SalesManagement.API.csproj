@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Atualize para a versão 7.3.1 ou superior -->
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SalesManagement.Application\SalesManagement.Application.csproj" />
+    <ProjectReference Include="..\SalesManagement.Domain\SalesManagement.Domain.csproj" />
+    <ProjectReference Include="..\SalesManagement.Infrastructure.CrossCutting\SalesManagement.Infrastructure.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>
+	
